@@ -1,3 +1,5 @@
+### this project was made while fallowing along with a youtube tutorial by theNetNinja [Watch the Tutorial](https://www.youtube.com/watch?v=ZSWl5UwhHcs)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
