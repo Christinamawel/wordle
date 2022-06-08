@@ -1,8 +1,22 @@
 import React from 'react'
 
-export default function Row( {guess} ) {
+export default function Row( {guess, currentGuess} ) {
 
-  if(guess.length > 0) {
+  if(currentGuess) {
+    const letters = currentGuess.split('')
+    return (
+      <div className='row current'>
+        {letters.map((letter, i) => (
+          <div key={i} className="filled">{letter}</div>
+        ))}
+        {[...Array(5 - letters.length)].map((_, i) => (
+          <div key={i}></div>
+        ))}
+      </div>
+    )
+  }
+
+  if(guess?.length > 0) {
     return (
       <div className='row past'>
         {guess.map((l, i) => (
