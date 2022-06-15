@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Model({isCorrect, turn, solution}) {
+export default function Modal({isCorrect, turn, solution}) {
   return (
     <div className='modal'>
       {isCorrect && (
